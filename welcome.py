@@ -34,18 +34,38 @@ def gamer(hand):
         print ("player win", hand, "cobers",x)
     elif hand=="paper" and x=="spock":
         print ("player win", hand, "refuse",x)
-    elif hand=="lizard" and hand=="spock":
+    elif hand=="lizard" and x=="spock":
         print ("player win", hand, "poisons",x)
-    elif hand =="lizard" and hand =="paper":
+    elif hand =="lizard" and x =="paper":
         print ("player win", hand, "eat",x)
-    elif hand=="scissor"and hand =="paper":
+    elif hand=="scissor"and x =="paper":
         print ("player win", hand, "cut",x)
-    elif hand=="scissor" and hand=="lizard":
+    elif hand=="scissor" and x=="lizard":
         print ("player win", hand, "beheaded",x)
+    #computer
+    elif x=="rock" and hand=="scisor":	
+        print ("computer win", x,"crushes",hand)
+    elif x=="rock" and hand=="lizard":
+        print ("computer win",x,"crushes",hand)
+    elif x=="spock" and hand=="scissor":
+        print ("computer win", x, "break",hand)
+    elif x=="spock" and hand=="rock":
+        print ("computer win", x, "pulverize",hand)
+    elif x=="paper" and hand=="rock":
+        print ("computer win", x, "cobers",hand)
+    elif x=="paper" and hand=="spock":
+        print ("computer win", x, "refuse",hand)
+    elif x=="lizard" and hand=="spock":
+        print ("computer win", x, "poisons",hand)
+    elif x =="lizard" and hand =="paper":
+        print ("computer win", x, "eat",hand)
+    elif x=="scissor"and hand =="paper":
+        print ("computer win", x, "cut",hand)
+    elif x=="scissor" and hand=="lizard":
+        print ("computer win", x, "beheaded",hand)    
     else:
-        print ("try again")
-      
-    return 
+        print("try again")
+    
     
     
     
