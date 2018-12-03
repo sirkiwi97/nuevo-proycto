@@ -1,2 +1,3 @@
 'template maching'
-print ('kimi')
+
+import numpy
