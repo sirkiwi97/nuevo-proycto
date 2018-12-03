@@ -1,12 +1,12 @@
 import random
 
-hand=[1,2,3,4,5]
+h=[1,2,3,4,5]
    
-hand[0]="rock"
-hand[1]="spock"
-hand[2]="paper"
-hand[3]="lizard"
-hand[4]="scisor"
+h[0]="rock"
+h[1]="spock"
+h[2]="paper"
+h[3]="lizard"
+h[4]="scisor"
 #rock crushes a lizard
 #rock crushes scissor
 #spock break scissor
@@ -17,8 +17,9 @@ hand[4]="scisor"
 #lizard eat paper
 #scissor cut paper
 #scissor beheaded lizard
-
-x=random.choice(hand)
+hand=input("play the game")
+x=random.choice(h)
+game=hand
 def gamer(hand):
     print ("computer choice", x, "and player choice",hand)
     if hand=="rock" and x=="scisor":	
@@ -48,6 +49,6 @@ def gamer(hand):
     
     
     
-gamer("rock")
-gamer("spock")
+gamer(game)
+
     
